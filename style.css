@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px;
+    min-height: 100vh;
+
+}
+
+.container{
+    border-radius: 20px;
+    background-color: white;
+    max-width: 600px;
+}
+
+
+.drawer img{
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+
+.wrapper{
+    padding: 20px 40px 20px 40px;
+    position: relative;
+}
+
+.bottom-text{
+    color: hsl(212, 23%, 69%);
+}
+
+.footer{
+    position: relative;
+    height: 80px;
+}
+
+.photo img{
+    border-radius: 100px;
+    width: 50px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.name{
+    position: absolute;
+    bottom: 15px;
+    left: 100px;
+}
+.name h3{
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.name p{
+    color: hsl(212, 23%, 69%);
+    margin-top: 0;
+}
+
+.arrow{
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-self: flex-end;
+    position: absolute;
+    right: 30px;
+    bottom: 35px;
+    cursor: pointer;
+}
+
+.social{
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 0 0 20px 20px;
+    position: relative;
+    height: 80px;
+}
+
+.social .dark-arrow{
+    background-color:hsl(214, 17%, 51%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    position: absolute;
+    right: 30px;
+    bottom: 34px;
+    cursor: pointer;
+
+    
+}
+
+.dark-arrow img{
+    filter: brightness(0) invert(1);
+    
+}
+
+.social .pinterest{
+    position: absolute;
+    left: 200px;
+    bottom: 35px;
+    cursor: pointer;
+}
+
+.social .twitter{
+    position: absolute;
+    left: 160px;
+    bottom: 35px;
+    cursor: pointer;
+}
+
+.social .facebook{
+    position: absolute;
+    left: 120px;
+    bottom: 35px;
+    cursor: pointer;
+}
+
+.social h4{
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    letter-spacing: 5px;
+    color: hsl(214, 17%, 51%);
+}
+
+.hidden{
+    display: none;
+}
+
+.nube{
+    visibility: hidden;
+    background-color: hsl(210, 46%, 95%);
+    position: absolute;
+}
+
+.extra{
+    visibility: hidden;
+}
+
+@media (min-width: 1300px){
+    .container{
+        display: flex;
+       max-width: 65%;
+       
+       
+    }
+
+    .drawer img{
+        border-radius: 20px 0 0 20px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .wrapper .top-text{
+        font-size: 30px;
+    }
+
+    .social{
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .text-area{
+        position: relative;
+    }
+
+    .nube{
+        background-color: hsl(217, 19%, 35%);
+        position: absolute;
+        right: -75px;
+        bottom: 100px;
+        width: 250px;
+        height: 60px;
+        border-radius: 20px;
+        visibility: visible;
+    }
+
+    .nube::after{
+        content: "";
+        width: 30px;
+        height: 30px;
+        background-color: hsl(217, 19%, 35%);
+        position: absolute;
+        transform: rotate(45deg);
+        bottom: -15px;
+        left: 115px;
+    }
+
+    .nube h4{
+        position: absolute;
+        left: 29px;
+        color: hsl(212, 23%, 69%);
+    }
+
+
+    .nube .pinterest-2{
+        position: absolute;
+        bottom: 19px;
+        right: 29px;
+        cursor: pointer;
+        
+    }
+    .nube .facebook-2{
+        position: absolute;
+        bottom: 19px;
+        left: 110px;
+        z-index: 1;
+        cursor: pointer;
+        
+    }
+    .nube .twitter-2{
+        position: absolute;
+        bottom: 19px;
+        right: 73px;
+        cursor: pointer;
+        
+    }
+
+    .nube .dark-arrow-2{
+        position: absolute;
+        background-color: hsl(217, 19%, 35%);
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        left: 115px;
+        bottom: -65px;
+        cursor: pointer;
+    } 
+
+    .nube img{
+        filter: brightness(0) invert(1);
+    }
+
+    .container .extra{
+        visibility: visible;
+        height: 80px;
+        top: 1000px;
+    }
+}
